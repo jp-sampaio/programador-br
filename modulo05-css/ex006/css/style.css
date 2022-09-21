@@ -1,0 +1,21 @@
+html {
+    font-size: 20px;
+}
+
+#conteiner {
+    font-size: 10px;
+}
+
+.exemplo01 {
+    font-size: 2em;
+}
+
+.exemplo02 {
+    font-size: 2em;
+}
+
+.exemplo03 {
+    font-size: 3rem;
+}
+
+/* EM pela é referente ao tamanho do pai dele e REM é de acordo com o elemento root que é o html.*/
