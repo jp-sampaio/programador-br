@@ -1,0 +1,37 @@
+body {
+    background-image: url('./images/Ceramica.jpg');
+}
+
+#probr {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    /* background-color: #ffa929;
+    background-image: url('./images/BackgroundImage.png');
+    background-position: top right;
+    background-repeat: no-repeat; */
+    /* --- SHORTHANDS --- */
+    background: #ffa929 url('./images/BackgroundImage.png') top right no-repeat;
+    background-size: auto;
+}
+
+#fundo-doido {
+    width: 400px;
+    height: 300px;
+    background: black url('./images/Textura_fundo.png') center no-repeat;
+    /* No contain ele vai preencher um lado por completo, nesse caso a altura. */
+    background-size: contain;
+}
+
+p{
+    width: 400px;
+    text-align: justify;
+    /* background-color: #00ffff;
+    background-image: url('./images/Fundo_abstrato.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* --SHORTHANDS-- */
+    background: #00ffff url('./images/Fundo_abstrato.jpg') center no-repeat fixed;
+    background-size: cover;
+}
