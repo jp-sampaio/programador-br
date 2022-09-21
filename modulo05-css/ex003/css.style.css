@@ -1,0 +1,22 @@
+#verde {
+    height: 150px;
+    background-image: linear-gradient(to top,red, blue, green);
+    margin-bottom: 10px;
+}
+
+#amarelo {
+    height: 150px;
+    background-image: linear-gradient(30deg, #00ffff, #f3a4b1, #ffff00);
+    margin-bottom: 10px;
+}
+
+#vermelho {
+    height: 150px;
+    background-image: linear-gradient(to left, orange, black 40%);
+    margin-bottom: 10px;
+} 
+
+#rosa {
+    height: 150px;
+    background-image: linear-gradient(to right, red 20%, 10%, orange, pink);
+}
