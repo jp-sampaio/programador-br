@@ -1,0 +1,62 @@
+#header {
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+}
+
+#header h1 {
+    color: brown;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+#paragrafo1 {
+    color: #ff00ff;
+}
+
+p {
+    background-color: gold;
+    color: #33781096;
+}
+
+#anchor {
+    background-color: white;
+}
+
+#p01 {
+    text-align: justify;
+    line-height: 1.5em;
+    color: blue;
+}
+
+.fundo-azul {
+    background-color: rgba(36, 36, 248, 0.671);
+    color: orange;
+}
+
+#titulo02 {
+    color: red;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.692);
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer a {
+    text-decoration: none;
+    color: rgb(172, 168, 168);
+    font-weight: bold;
+}
+
+#footer a:hover {
+    background-color: red;
+}
