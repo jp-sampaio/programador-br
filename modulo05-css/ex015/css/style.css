@@ -1,0 +1,27 @@
+a {
+    background-color: lightgray;
+    padding: 10px;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: cell;
+}
+
+/* visitados */
+a:visited {
+    background-color: bisque;
+}
+
+/* mouse encima */
+a:hover {
+    background-color: lightseagreen;
+    color: chartreuse;
+    padding: 11px;
+}
+
+/* pressionando o botão do mouse no link */
+a:active {
+    background-color: rgb(247, 247, 158);
+    color: black;
+}
