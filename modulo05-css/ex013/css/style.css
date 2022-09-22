@@ -1,0 +1,27 @@
+#container {
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+p {
+    width: 300px;
+}
+
+#fundo {
+    background-color: lightblue;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#dentro {
+    background-color: red;
+    width: 400px;
+    height: 300px;
+}
+
+/* Overflow, Overflow-x e Overflow-y escode ou cria uma barra de rolagem caso o conteúdo dentro da div for maior que o a div que comporta ela. */
