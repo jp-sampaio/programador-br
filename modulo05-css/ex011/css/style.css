@@ -1,0 +1,23 @@
+#primeiro {
+    height: 100px;
+    background-color: red;
+    margin: 20px 10px 30px 20px;
+}
+
+#segundo {
+    background-color: blue;
+    padding: 10px;
+}
+
+#terceiro {
+    height: 100px;
+    background-color: green;
+    margin: 40px 30px;
+    border-radius: 20px;
+}
+
+p {
+    padding: 30px;
+    border: 2px solid blue;
+    margin-left: 20px;
+}
