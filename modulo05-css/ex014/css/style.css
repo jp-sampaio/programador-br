@@ -1,0 +1,22 @@
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+p {
+    width: 400px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#imagem {
+    text-align: center;
+}
+
+img {
+    background-color: orange;
+}
