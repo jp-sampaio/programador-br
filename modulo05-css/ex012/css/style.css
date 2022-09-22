@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#red {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    color: white;
+    padding: 10px;
+    border: 10px solid black;
+    margin: 30px;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    padding: 5px 0px 0px 10px;
+}
+
+/* Com o Box Sizing vain continuar com o mesmo tamanho já que as medidas dos outros elementos vai entrar na conta e não mais ser adicionado sem permanecer na conta. */
