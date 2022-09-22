@@ -44,7 +44,7 @@ li a {
     color: brown;
     font-weight: bold;
     cursor: pointer;
-    transition: background .5s;
+    transition: background-color .5s;
 }
 
 li a:hover {

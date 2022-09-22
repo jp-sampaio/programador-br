@@ -1,0 +1,129 @@
+/* Fonte: Open Sans (google fonts)
+font-family: 'Bungee Spice', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Sriracha', cursive;
+Cores das fontes: #555, #111
+Cor dos links: #fd8a24
+Cor da top bar e da footer: #333 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+#top-bar {
+    background-color: rgba(51, 51, 51, 0.918);
+    border-bottom: 10px solid #fd8a24;
+    text-align: center;
+    padding: 20px;
+}
+
+#top-bar h1 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+}
+
+#header {
+    width: 75vw;
+    margin: auto;
+}
+
+#header h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 30px 0px;
+}
+
+#header p {
+    font-size: 24px;
+    color: #555;
+}
+
+#header .escuro {
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+#header .pequeno {
+    font-size: 11px;
+    color: rgba(17, 17, 17, 0.568);
+    padding: 5px 0px 30px 0px;
+}
+
+#links a {
+    padding-right: 30px;
+}
+
+#links a img {
+    width: 30px;
+}
+
+hr {
+    margin: 30px 0px;
+}
+
+#conteudo {
+    width: 60vw;
+    margin: auto;
+}
+
+#conteudo h3 {
+    font-size: 1.5em;
+    text-indent: 10px;
+    padding: 20px 0px;
+}
+
+#conteudo p {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+#conteudo img { 
+    width: 100%;
+    margin-top: 30px;
+}
+
+#conteudo picture figcaption {
+    font-size: 15px;
+    color: #555;
+    margin: 20px 0px 30px 0px;
+}
+
+#conteudo a {
+    color: #fd8a24;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    transition: color .2s;
+}
+
+#conteudo a:hover{
+    color: #9c500dd7;
+    text-decoration: underline;
+}
+
+#conteudo span {
+    font-size: 1.2em;
+}
+
+#footer {
+    background-color: rgba(51, 51, 51, 0.918);;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#footer p {
+    color: rgb(197, 196, 196);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
