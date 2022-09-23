@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div {
+            background-color: lightblue;
+            margin-bottom: 10px;
+            width: 500px;
+        }
+        /* display block ocupa todo espaço do width e pode modificar a altura e largura */
+        
+        p {
+            background-color: rgba(165, 42, 42, 0.795);
+        }
+        /* display inline ocupa só o espaço do elemento e não modifica suas dimenções */
+        span {
+            /* display inline-block manter as mesma definições do inline mais passa a receber mudanças para width e height */
+            display: inline-block;
+            background-color: lightgreen;
+            width: 500px;
+        }
+
+        img {
+            /* display: none;  é como se a imagem não existisse*/
+            /* visibility: hidden; esconde a imagem e manter as mesma proporções do seu espaço*/
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Esta é uma Div normal
+    </div>
+    <div>
+        E aqui é outra historia 
+        <div>Div de dentro</div>
+        continua
+    </div>
+
+    <div>
+        <p>Este aqui é um paragrafo normal</p>
+        <p>Este aqui é outra historia</p>
+    </div>
+
+    <p>
+        Aqui eu tenho um inicio de um paragrafo <span> um span no meio </span> e o fim do paragrafo.
+    </p>
+
+    <p>
+        Aqui eu tenho um inicio de um paragrafo <img src="./logotipo_da_empresa_google.webp" alt="imagem o google"> E o fim do paragrafo.
+    </p>
+
+    <div style="display: flex;">
+        <img src="./logotipo_da_empresa_google.webp" alt="logo do google">
+        <h1>Logo do Google</h1>
+    </div>
+
+    <div id="square" style="width: 50px; height: 50px; background-color: blue; margin: auto;">
+    </div>
+
+    <div id="conteiner" style="text-align: center;">
+        <img src="./logotipo_da_empresa_google.webp" alt="google" style="display: block; border: 1px solid red; margin: auto;">
+    </div>
+</body>
+</html>
