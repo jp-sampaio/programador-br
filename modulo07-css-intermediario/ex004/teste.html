@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento Vertical</title>
+    <style>
+        .card {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .c1 {
+            line-height: 200px;
+        }
+
+        .c2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card2 {
+            clear: left;
+            border: 2px solid black;
+            width: 300px;
+            padding: 80px 140px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            João Paulo
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            João Paulo
+        </div>
+    </div>
+
+    <div class="card2">
+        <div>
+            João Paulo
+        </div>
+    </div>
+</body>
+</html>
