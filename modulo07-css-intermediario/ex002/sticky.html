@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sticky</title>
+    <style>
+        #conteiner {
+            width: 500px;
+            height: 1000px;
+            border: 2px solid gray;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+        .quadrado-red {
+            background-color: red;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            /* Segue as mesma funcões do fixed mais vai respeitar o seu posicionamento e os outros não vão ignorar ele e os outros vão passar por ele.*/
+        }
+
+        .quadrado-green {
+            background-color: green;
+        }
+
+        .quadrado-blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="quadrado quadrado-red">STICKY</div>
+        <div class="quadrado quadrado-green"></div>
+        <div class="quadrado quadrado-blue"></div>
+    </div>
+</body>
+</html>

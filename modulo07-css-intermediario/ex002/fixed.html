@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <style>
+        #conteiner {
+            width: 500px;
+            height: 2000px;
+            border: 2px solid black;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+
+        .quadrado-red {
+            background-color: red;
+            color: white;
+            text-align: center;
+            position: fixed;
+            left: 200px;
+            top: 300px;
+        }
+        /* Assim como o absolute também passa a não existir naquela posição e vai ficar fixo onde for posicionado em relação a viewport que é a sua reverencia. */
+
+        .quadrado-green {
+            background-color: green;
+        }
+
+        .quadrado-blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="quadrado quadrado-red">FIXED</div>
+        <div class="quadrado quadrado-green"></div>
+        <div class="quadrado quadrado-blue"></div>
+    </div>
+</body>
+</html>
