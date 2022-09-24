@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias Quereis</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        } 
+
+        #conteiner {
+            background-color: lightcoral;
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+            font-size: 18px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            color: white;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            color: white;
+            float: left;
+            margin-right: 15px;
+        }
+        @media screen and (min-width: 500px) and (max-width: 700px) {
+            #conteiner {
+                background-color: lightseagreen;
+            }
+
+            .logo {
+                float: none;
+                text-align: center;
+            }
+
+            .menu {
+                float: none;
+                text-align: center;
+            }
+
+            li {
+                float: none;
+                padding: 5px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Cursos</li>
+                <li>Contato</li>
+                <li>Escritórios</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
