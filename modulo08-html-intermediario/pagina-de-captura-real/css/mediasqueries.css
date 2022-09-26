@@ -1,0 +1,45 @@
+
+/* Types de BreakPoints
+----------------------------------------------
+- Dispositivos moóveis: 320px - 480px;
+- Tablets: 481px - 768px;
+- Telas pequenas e laptops: 769px - 1024px;
+- Desktops e telas grandes: 1025px - 1200px;
+- Telas muitos grandes e TVs: Acima de 1201px.
+----------------------------------------------
+*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    
+    .formContainer {
+        margin: auto;
+        float: none;
+        max-width: 300px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.671);
+    }
+
+    footer .picture {
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+
+    footer .description {
+        width: 70%;
+        text-align: justify;
+        word-spacing: 1px;
+    }
+
+    footer .description h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
