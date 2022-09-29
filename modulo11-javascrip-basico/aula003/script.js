@@ -6,6 +6,7 @@
 --Modulo % (resto da divisão);
 --++ incremento (mais 1);
 -- -- decremento (menos 1);
+-- ** numero elevado ao outro;
 */
 
 //Adição +
