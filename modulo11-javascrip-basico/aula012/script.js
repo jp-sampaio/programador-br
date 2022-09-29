@@ -16,6 +16,18 @@
 
 //===============================================
 
+var numero = 10;
+for(var i = 1; i <= numero; i++){
+    console.log('Tabuada de 8 x ', i, ' é igual a ', 8*i);
+}
+
+var num = 100;
+for(var j = 0; j <= num; j += 10){
+    console.log(j);
+}
+
+//===============================================
+
 // var num = Math.random() * 100;
 
 // while (num < 90){
