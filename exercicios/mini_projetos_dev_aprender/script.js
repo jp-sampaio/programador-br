@@ -218,3 +218,68 @@
 
 //segunda forma
 
+// const primeirasNotas = [100, 80, 90];
+
+// console.log(mediaDoAluno(primeirasNotas));
+
+// function mediaDoAluno(notas){
+//     const media = calcularMedia(notas);
+
+//     if(media < 60){
+//         return 'E';
+//     }
+//     else if(media >= 60 && media < 70){
+//         return 'D'
+//     }
+//     else if(media >=70 && media < 80){
+//         return 'C';
+//     }
+//     else if(media >= 80 && media < 90){
+//         return 'B';
+//     }
+//     else if(media >= 90 && media <= 100){
+//         return 'A';
+//     }
+//     else{
+//         return 'Inválido';
+//     }
+// }
+
+// function calcularMedia(primeirasNotas){
+//     let soma = 0;
+//     for(let nota of primeirasNotas){
+//         soma = (primeirasNotas[0] + primeirasNotas[1] + primeirasNotas[2]) / (primeirasNotas.length);
+//     }
+//     return soma;
+// }
+
+
+//======================================================================================================
+
+//09: Criar uma função que exiba a quantidade de asterisco que aquela linha possui;
+
+
+//primeira forma
+// exibirAsteriscos(10);
+
+// function exibirAsteriscos(linhas){
+//     let padrao = '';
+//     for( let linha = 1; linha <= linhas; linha++){
+//         padrao += '*';
+//         console.log(padrao);
+//     }
+// }
+
+//Segunda Forma
+
+exibirAsteriscos(8)
+
+function exibirAsteriscos(linhas){
+    for(let linha = 1; linha <= linhas; linha++){
+        padrao = '';
+        for(let i = 0; i <= linha; i++){
+            padrao += '*';
+        }
+        console.log(padrao);
+    }
+}
