@@ -272,14 +272,37 @@
 
 //Segunda Forma
 
-exibirAsteriscos(8)
+// exibirAsteriscos(8)
 
-function exibirAsteriscos(linhas){
-    for(let linha = 1; linha <= linhas; linha++){
-        padrao = '';
-        for(let i = 0; i <= linha; i++){
-            padrao += '*';
-        }
-        console.log(padrao);
-    }
-}
+// function exibirAsteriscos(linhas){
+//     for(let linha = 1; linha <= linhas; linha++){
+//         padrao = '';
+//         for(let i = 0; i <= linha; i++){
+//             padrao += '*';
+//         }
+//         console.log(padrao);
+//     }
+// }
+
+//=================================================================================================
+
+//10: Criar uma função que mostre somente os numeros primos
+
+// exibirNumerosPrimos(15);
+
+// function exibirNumerosPrimos(limite){
+//     for(let numero = 2; numero <= limite; numero++){
+        
+//         if(numeroPrimo(numero)) console.log(numero);
+//     }
+// }
+
+// function numeroPrimo(numero){
+        
+//     for(let divisor = 2; divisor < numero; divisor++){
+//         if(numero % divisor === 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
