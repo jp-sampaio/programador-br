@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let a = {
+            nome: "Pedro",
+            nota: 8.5
+        }
+
+        let b = JSON.stringify(a) // transforma um objeto em uma string
+        console.log(a)
+        console.log(b)
+
+        let a2 = '{"nome":"Luana","nota":7.9}' // esse formato é importante
+
+        let b2 = JSON.parse(a2) // Transforma uma string que venha no formato de objeto em um objeto
+        console.log(a2)
+        console.log(b2)
+    </script>
+</body>
+</html>
