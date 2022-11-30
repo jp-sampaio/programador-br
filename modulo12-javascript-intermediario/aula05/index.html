@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar os Elementos pai e filhos</title>
+    <script>
+        window.onload = function (){
+            let titulo = document.getElementById("d1")
+            console.log(titulo.children[1]) // Primeiro elemento filho
+
+            let paragrafo = titulo.children[0]
+            console.log(paragrafo.parentElement) // Elemento pai
+
+            let h1 = document.getElementsByTagName("h1")
+            for(let h of h1){
+                console.log(h)
+                h.addEventListener("click", quemEOPai)
+            }
+
+            function quemEOPai(){
+                // let t = e.target //pega o elemento nesse caso o h1
+                console.log(this.parentElement)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <h1>Titulo 01</h1>
+        <p>Pequeno texto de mostragem</p>
+    </div>
+
+    <div id="d2">
+        <h1>Titulo 02</h1>
+        <p>Segundo texto de mostragem para o exercicio</p>
+    </div>
+</body>
+</html>
