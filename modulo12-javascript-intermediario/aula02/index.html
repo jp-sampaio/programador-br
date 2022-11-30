@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos parte 1/3</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightblue;
+            color: yellowgreen;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('clicou no h1')">clique em mim</h1>
+    <h2 id="sub-titulo" onclick="clicar()">clique aqui também</h2>
+    <label for="aberto">Aberto:</label>
+    
+    <input type="text" name="aberto" id="aberto" onchange="onchangeH2(this)"> <br>
+    <!-- Aqui o this esta se referindo ao próprio elemento input-->
+
+    <div onclick="hideH1()">clicar</div>
+
+    <script>
+        let h2 = document.getElementById("sub-titulo");
+
+        function clicar(){
+            h2.style.color = "orange";
+        }
+
+        function onchangeH2(input){
+            h2.innerHTML = input.value
+        }
+
+        function hideH1(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.style.display = "none";
+        }
+    </script>
+</body>
+</html>
