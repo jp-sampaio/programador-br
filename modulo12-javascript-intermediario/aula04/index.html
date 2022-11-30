@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom parte 3/3</title>
+    <script>
+        function carregar(){
+            let t = document.getElementById("titulo");
+            
+            t.onclick = mudarComClique // primeira forma de declarar um evento pelo js
+            t.onmouseup = voltarTexto
+            t.addEventListener("mouseover", mudarCor) // segunda forma  de declarar um evento no js
+            t.addEventListener("mouseout", voltarCor)
+        }
+
+        function mudarComClique(){
+            this.innerHTML = "MUDAR"
+        }
+
+        function voltarTexto(){
+            this.innerHTML = "Titulo do meu site"
+        }
+
+        function mudarCor(){
+            this.style.color = "blue"
+        }
+
+        function voltarCor(){
+            this.style.color = "black"
+        }
+    </script>
+</head>
+<body onload="carregar()">
+    <h1 id="titulo">Titulo do meu site</h1>
+</body>
+</html>

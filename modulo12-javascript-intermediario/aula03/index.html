@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom parte 2/3</title>
+    <style>
+
+        body{
+            background-color: rgba(0, 0, 0, 0.596);
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        div {
+            background-color: rgb(128, 202, 226);
+            width: 150px;
+            text-align: center;
+            padding: 30px;
+            margin: auto;
+            border-radius: 10px;
+            font: 25px arial;
+        }
+    </style>
+</head>
+<body onload="console.log('Esta página acabou de ser carregada!')">
+    <img src="https://cdn.leroymerlin.com.br/categories/televisao_cc32_300x300.jpg" alt="tv na promoção">
+
+    <div onmouseover="passar(this)" onmouseout="fora()" onmousedown="clicar(this)">clique aqui</div>
+
+    <script>
+        function passar(elemento){
+            elemento.style.backgroundColor = "gray";
+        }
+
+        function fora(){
+            let fora = document.getElementsByTagName("div")[0]
+            fora.style.backgroundColor = "rgb(128, 202, 226)"
+        }
+
+        function clicar(algo){
+            algo.style.color = "red"
+        }
+    </script>
+</body>
+</html>
