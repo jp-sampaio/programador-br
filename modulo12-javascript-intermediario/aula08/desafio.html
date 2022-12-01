@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Desafio de uma lista pelo input</h1>
+
+    <label for="lista">Lista de Tarefas</label>
+    <input type="text" name="lista" id="lista" oninput="atualizar(this)">
+    <input type="button" value="adicionar" onclick="carregar()">
+    
+    <div id="resultado">
+
+    </div>
+    <script>
+        /*
+            ​Crie uma lista de tarefas que tenha um input para receber a tarefa, e armazene na memória utilizando o LocalStorage.
+            Dica: Utilize Arrays e Json
+        */
+
+        function carregar(){
+            let nome = localStorage.getItem("nome")
+            let lista = document.getElementById("resultado")
+            lista.innerHTML = nome
+        }
+
+        function atualizar(elemento){
+            let valor = elemento.value
+            console.log(valor)
+
+            localStorage.setItem("nome", valor)
+        }
+    </script>
+</body>
+</html>
