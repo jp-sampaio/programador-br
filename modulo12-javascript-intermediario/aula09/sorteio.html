@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+</head>
+<body>
+    <h1 id="exibir"></h1>
+    
+    <button onclick="sortear()">Sortear</button>
+
+    <script>
+        let pessoas = ["João Paulo", "Maria", "Fernanda", "Joana", "Marcos", "Pedro", "Ótavio", "Luiza", "Taís", "Pablo"];
+
+        function sortear(){
+            let participantes = pessoas.length;
+            let numeroSorteado = Math.floor(Math.random() * participantes);
+            document.getElementById("exibir").innerHTML = pessoas[numeroSorteado];
+        }
+    </script>
+</body>
+</html>
