@@ -5,34 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
     <h1>Desafio de uma lista pelo input</h1>
 
     <label for="lista">Lista de Tarefas</label>
-    <input type="text" name="lista" id="lista" oninput="atualizar(this)">
-    <input type="button" value="adicionar" onclick="carregar()">
+    <input type="text" id="lista">
+    <input type="button" value="adicionar" onclick="adicionar()">
+    <input type="button" value="mostrar" onclick="mostrar()">
+    <input type="button" value="limpar" onclick="limpar()">
     
-    <div id="resultado">
-
-    </div>
+    <div id="resultado"></div>
     <script>
         /*
             ​Crie uma lista de tarefas que tenha um input para receber a tarefa, e armazene na memória utilizando o LocalStorage.
             Dica: Utilize Arrays e Json
         */
 
-        function carregar(){
-            let nome = localStorage.getItem("nome")
-            let lista = document.getElementById("resultado")
-            lista.innerHTML = nome
+        var lista = [];
+
+        function adicionar(){
+            if(localStorage.minhaLista){
+                lista = JSON.parse(localStorage.getItem("minhaLista"));
+            }
+
+            let novoDado = document.getElementById("lista").value;
+            lista.push(novoDado);
+            document.getElementById("lista").value = "";
+            localStorage.minhaLista = JSON.stringify(lista);
         }
 
-        function atualizar(elemento){
-            let valor = elemento.value
-            console.log(valor)
+        function mostrar(){
+            let exibirLista = document.getElementById("resultado");
+            exibirLista.innerHTML = "";
+            
+            if(localStorage.minhaLista){
+                lista = JSON.parse(localStorage.getItem("minhaLista"));
+            }
 
-            localStorage.setItem("nome", valor)
+            for(let i in lista){
+                let p = document.createElement("p");
+                p.innerHTML = lista[i];
+                exibirLista.append(p);
+            }
+        }
+
+        function limpar(){
+            lista = [];
+            localStorage.minhaLista = JSON.stringify(lista);
         }
     </script>
 </body>
