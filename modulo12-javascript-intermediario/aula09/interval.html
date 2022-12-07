@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+
+    <input type="button" value="Iniciar" onclick="iniciar()">
+    <input type="button" value="Parar" onclick="parar()">
+
+    <script>
+        let numero = 0;
+        let intervalo;
+
+        function mudarTexto(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.innerHTML += " " + numero;
+            numero++;
+        }
+
+        function iniciar(){
+            intervalo = setInterval(mudarTexto, 1000);
+        }
+
+        function parar(){
+            clearInterval(intervalo);
+        }
+    </script>
+</body>
+</html>
