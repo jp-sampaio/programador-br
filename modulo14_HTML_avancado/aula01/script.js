@@ -8,8 +8,13 @@ image.addEventListener("click", function (){
     console.log(lastImage)
 });
 
+//=======================================================
+
 let lista = document.getElementById("lista");
-let numero = Number(lista.getAttribute("num"));
+
+lista.dataset.num = "5"
+// let numero = Number(lista.getAttribute("num"));
+let numero = Number(lista.dataset.num);
 
 let conteudo = "";
 
@@ -17,4 +22,4 @@ for(let i = 0; i < numero; i++){
     conteudo += `<li> ${i} </li> `;
 }
 
-lista.innerHTML = conteudo;
+lista.innerHTML = conteudo
