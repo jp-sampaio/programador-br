@@ -51,16 +51,36 @@ CRIAÇÃO DE LINHAS EM V
 
 linha.beginPath();
 
-let x = 250;
-let y = 250;
-let raio = 100;
-let inicio = 0;
-let fim = 2 * Math.PI;
+let circle = {
+    x: 250,
+    y: 250,
+    raio: 100,
+    inicio: 0,
+    fim: 0,
+    antiHorario: false
+}
 
-linha.arc(x, y, raio, inicio, fim);
-linha.strokeStyle = "white";
-linha.lineWidth = 3;
-linha.fillStyle = "blue";
+function drawCircle(c){
+    linha.beginPath();
+    linha.rect(0, 0, 500, 500);
+    linha.fillStyle = "brown";
+    linha.fill();
 
-linha.stroke();
-linha.fill();
+    
+    linha.beginPath();
+    linha.arc(c.x, c.y, c.raio, c.inicio, c.fim, c.antiHorario);
+    linha.strokeStyle = "white";
+    linha.lineWidth = 3;
+    linha.fillStyle = "blue";
+    linha.stroke();
+    linha.fill();
+}
+
+setInterval(function(){
+    if(circle.fim < 2 * Math.PI){
+        circle.fim += .4;
+        circle.x += 5;
+    }
+
+    drawCircle(circle)
+}, 200);
