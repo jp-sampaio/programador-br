@@ -1,0 +1,43 @@
+/*
+Pseudo-Elements serve para modificar o elemento e adicionar novos elementos;
+*/
+
+/* mudar o estilo da primeira linha */
+p::first-line {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Muda o estilo da primeira letra */
+p::first-Letter {
+    font-size: 35px;
+    color: blue;
+}
+
+li {
+    list-style: none;
+}
+
+/* Coloca um elemento no inicio */
+li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./check.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Coloca um elemento no final */
+h1::after {
+    content: "=>";
+    color: blueviolet;
+}
+
+/* Muda o estilo do que esta sendo selecionado para o estilo que foi proposto */
+p::selection {
+    color: coral;
+    background-color: chartreuse;
+}
