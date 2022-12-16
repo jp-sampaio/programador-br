@@ -1,0 +1,35 @@
+/* Seletor universal que pega todos os elementos */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+
+/* Seletor comum */
+body {
+    background-color: bisque;
+}
+
+/* Se quiser colocar um estilo para mais de um seletor é só utilizar a vírgula(,); */
+h1, .paragrafo1 {
+    background-color: brown;
+}
+
+/* Se deixar um espaço no lugar da virgula vai ser pelo o filho do elemento, se utilizar o sinal de menos(>) não vai contar com elementos netos */
+
+header p{
+    text-transform: uppercase;
+}
+
+header > p{
+    text-transform: lowercase;
+}
+
+/* O mais(+) pega somente o elemente que esta após esse que ta fazendo referência, nesse caso o p que esta logo após a div, já o (~) pega todos e não somente o primeiro */
+div + p {
+    color: crimson;
+}
+
+/* Assim que faz para pegar um elemento pelo seu atributo, muito usando em formulario para estilizar os types, as variante que vem antes do sinal de igualdade são: ~ para todos que tiver esse nome; ^ para todos que tiverem essa letra no inicio; $ para todos que tiverem essa letra no final e * para o elemento que tiver essas letra em qualquer parte da palavra */
+[title="titulo 5"]{
+    display: none;
+}

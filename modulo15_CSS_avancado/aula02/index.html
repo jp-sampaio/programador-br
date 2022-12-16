@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <h3 title="titulo 3">Titulo</h3>
+        <h4>Titulo</h4>
+        <h5 title="titulo 5">Titulo</h5>
+        <h6>Titulo</h6>
+    </div>
+        <p>paragrafo extra</p>
+    <header>
+        <p class="paragrafo1">Paragarafo 1</p>
+        <p>Paragarafo 2</p>
+        <p>Paragarafo 3</p>
+        <p>Paragarafo 4</p>
+        <section>
+            <p>Paragarafo 2</p>
+            <p>Paragarafo 3</p>
+            <p>Paragarafo 4</p>
+        </section>
+        <p>Paragarafo 5</p>
+        <p>Paragarafo 6</p>
+    </header>
+    
+    <script>
+        // podemos pegar os elementos pelo querySelector quando é somente um elemento e querySeletorAll para 
+        // quando é mais de um e pode ser usando os mesmo conceitos que foi utilizados no css;
+
+        let titulo = document.querySelector("[title]");
+        let titulos = document.querySelectorAll("[title*=titulo]");
+
+        console.log(titulo);
+        console.log(titulos);
+    </script>
+</body>
+</html>
