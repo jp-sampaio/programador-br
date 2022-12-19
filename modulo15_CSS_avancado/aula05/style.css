@@ -1,0 +1,9 @@
+/* As trasnformações podem ser várias, podendo ser mudança de direção, rotação, tamanho e outros */
+/* DAR UMA OLHADA NOP CAN I USE PARA VER AS COMPATIBILIDADES DAS PROPRIEDADES CSS */
+
+#quadrado{
+    width: 350px;
+    height: 400px;
+    background-color: blueviolet;
+    transform: rotate(46deg) scale(.5);
+}

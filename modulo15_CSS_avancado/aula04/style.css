@@ -1,0 +1,31 @@
+/* O calc é utilizado para manter as mesma proporções independentemente do tamanho da tela */
+/* Obs: o inline-blok coloca 4 px em todas as margens do elemento */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkgoldenrod;
+}
+
+.container{
+    background-color: coral;
+    width: 100%;
+}
+
+.primeira{
+    display: inline-block;
+    background-color: darkgrey;
+    width: calc(100% - 300px);
+    height: 300px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+}
+
+.segunda{
+    display: inline-block;
+    background-color: darkblue;
+    width: 300px;
+    height: 300px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+}

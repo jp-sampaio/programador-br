@@ -1,0 +1,29 @@
+/* Utilizando as varaiveis no css para armazenar características que possam ser usadas mais de uma vez */
+
+:root{
+    --cor-de-fundo: orange;
+    --peso-fonte: 25px;
+    --tamanho-do-quadrado: 300px;
+}
+
+.titulo{
+    background-color: var(--cor-de-fundo);
+}
+
+p{
+    font-size: var(--peso-fonte);
+}
+
+.primeiro{
+    display: inline-block;
+    width: var(--tamanho-do-quadrado);
+    height: var(--tamanho-do-quadrado);
+    background-color: var(--cor-de-fundo);
+}
+
+.segundo{
+    display: inline-block;
+    width: var(--tamanho-do-quadrado);
+    height: var(--tamanho-do-quadrado);
+    background-color: brown;
+}

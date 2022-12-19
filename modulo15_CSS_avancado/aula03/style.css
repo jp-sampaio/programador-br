@@ -1,0 +1,18 @@
+/*
+    Os pseudo class servem para fazer uma ação do estado de um elemento.
+*/
+
+/* Fazer mudar o estilo somente do elemento que está sendo focado */
+input:focus{
+    color: gold;
+}
+
+/* Primeiro filho */
+li:first-child{
+    background-color: blue;
+}
+
+/* Quando passar o mouse em cima do elemento */
+li:hover{
+    opacity: .4;
+}
