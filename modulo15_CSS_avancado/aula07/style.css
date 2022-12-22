@@ -1,10 +1,19 @@
-/* FlexBox é o modelo de caixa flexivel, ela modifica o tipo de display que antes era block ou inline para flex e com isso pode alinhar ela em coluna ou linha dependendo da sua direção. Até mesmo pode ser o inverso; */
+/* FlexBox é o modelo de caixa flexivel, ela modifica o tipo de display que antes era block ou inline para flex 
+   e com isso pode alinhar ela em coluna ou linha dependendo da sua direção. Até mesmo pode ser o inverso; */
+
 /* FlexBox wrap serve para manter as proporções da caixa independete do tamanhi da viewport. */
+
 /* Flex-flow é usado para juntar as propriedades do flexBox; */
+
 /* Justify-Content e Align-Itens tem como finalidade alinhar o elemento tanto na vertical como na horizontal */
+
 /* align content não deixa o espaço que os outros deixam a não ser que eu queira isso. */
-/* flex grow diz se o elemento deve aumentar e o shrink se ele deve diminuir, sendo 0 não e 1 sim, e outros valores vai ser quanto o elemento é maior ou menor que o todo. */
+
+/* flex grow diz se o elemento deve aumentar e o shrink se ele deve diminuir, sendo 0 não e 1 sim, e outros 
+   valores vai ser quanto o elemento é maior ou menor que o todo. */
+
 /* order muda a ordem dos elementos colocando a numeração necessária para isso*/
+
 /* align self muda a posição somente de um elemento */
 
 body{

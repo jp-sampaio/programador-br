@@ -1,0 +1,82 @@
+/* Grid é formado por linha e coluna e pode ter diferentes tipos de tamanhos podendo ser fixa ou dinamica, utiliza porcentagem ou fr(fração do tamanho das outras); */
+/* Template engloba column e rows que vem primeiro as linhas e depois as colunas separadas por /(barra) */
+/* grid-gap dar o espaço que desejar tanto na coluna como na linha, tem como fazer separado tambem, so adicionar onde quer; */
+/* justify-items posiciona na horizontal  e align-items na vertical e eles são referente ao espaço da grid*/
+/* justify-content e align-content os elementos passam a ter somente o espaço utilizavel e com isso ele passa a se posicionar em relaçõa ao container */
+/* grid area cria um apelido e com ele pode modificar onde vai ficar o objeto*/
+/* column e rows start e end tem a mesma função do area mais com uma precição melhor */
+
+body{
+    background-color: chocolate;
+}
+
+#container{
+    background-color: gray;
+    height: 500px;
+    padding: 10px;
+    color: aliceblue;
+    display: grid;
+    /* grid-template-rows: auto auto ;
+    grid-template-columns: auto auto auto; */
+    /* grid-template: 200px 200px / auto 30% auto; */
+    /* grid-row-gap: 10px;
+    grid-column-gap: 20px; */
+    /* grid-gap: 20px;
+    justify-items: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: space-between; */
+    /* grid-template-areas: "a3 a3 a3 a3 a3 a3" "a2 a2 a2 a4 a4 a4" "a1 a1 a5 a5 a5 a5" "a6 a6 a5 a5 a5 a5"; */
+    grid-template: auto auto auto auto / auto auto auto auto auto auto; /*4 linha e 6 colunas*/
+
+}
+
+#r1{
+    background-color: red;
+    /* grid-area: a1; */
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#r2{
+    background-color: blue;
+    /* grid-area: a2; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#r3{
+    background-color: green;
+    /* grid-area: a3; */
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+
+#r4{
+    background-color: red;
+    /* grid-area: a4; */
+    grid-column-start: 4;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    
+
+}
+
+#r5{
+    background-color: blue;
+    /* grid-area: a5; */
+    grid-row-end: span 2;
+    grid-column-end: span 4;
+}
+
+#r6{
+    background-color: green;
+    /* grid-area: a6; */
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
