@@ -1,0 +1,27 @@
+/* transições serve para não ter uma passagem brusca de um estado para outro principalmente quando usado o hover, no transition-property sequiser pode usar o all para todas*/
+
+body{
+    background-color: darkblue;
+}
+
+.button{
+    background-color: indigo;
+    max-width: 150px;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    /* transition-property: background-color, color, padding;
+    transition-duration: .5s, .7s, 2s;
+    transition-delay: 100ms;
+    transition-timing-function: ease; */
+    transition: background-color .5s ease, color 1s, padding 0.5s;
+}
+
+.button:hover{
+    background-color: rgba(76, 0, 130, 0.671);
+    color: red;
+    padding:6px 10px;
+}
