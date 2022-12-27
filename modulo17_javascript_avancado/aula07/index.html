@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Valor vs Referência</title>
+</head>
+<body>
+    <h1>Valor vs Referência</h1>
+    <p>
+        Quando se atribui um objeto e isso inclui array a outro objeto ele vai fazer referencia aquele objeto e o que foi mudado no objeto 2 vai mudar no objeto 1, diferentemente com os tipos primitivos que não ocorre isso. Para resolver esse problema tem algumas formas.
+    </p>
+
+    <script>
+        //as duas forma de resolver o problema no objeto
+        let turma1 = {nome: "João", idade: 32};
+        // let turma2 = Object.assign({}, turma1);
+        let turma2 = {...turma1}
+        turma2.idade = 22;
+
+        //agora com o array
+        let timeA = ["Maria", "Pamela", "Igor"];
+        // let timeB = timeA.slice();
+        let timeB = [...timeA];
+
+        timeB.push("Marcos");
+    </script>
+</body>
+</html>

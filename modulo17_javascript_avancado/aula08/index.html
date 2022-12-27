@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <p>
+        Nada mais é do que os 3 postos usados para criar uma copia seja do objeto ou de um array, ele também    auxilia para concatenar mais de uma informação nessa copia;
+    </p>
+    
+    <script>
+        let pessoa = {
+            nome: "Victor",
+            idade: 34
+        }
+
+        let contato = {
+            telefone: 998777904,
+            email: "teste2022@gmail.com"
+        }
+
+        let copia = {...pessoa, ...contato, mesagem: "final"};
+        copia.idade = 89;
+        
+        console.log(pessoa);
+        console.log(copia);
+        
+    </script>
+</body>
+</html>
