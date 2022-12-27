@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This e Bind</title>
+</head>
+<body>
+    <p>
+        O this depende do contesto que ele ta inserido, nesse caso quando ele ta na function dog o this passa a ser o dog, o mesmo caso acontece quando ta na function cat. O Bind é um metodo da function e ele referência o this quando ele não esta fazendo referência, ai passa ele como argumento.
+    </p>
+
+    <script>
+
+        let speakGeneric = function (){
+            console.log(this.sound);
+        }
+
+        let dog = {
+            sound: "Au Au",
+            speak: speakGeneric
+        }
+
+        let cat = {
+            sound: "Miau",
+            speak: speakGeneric
+        }
+
+        // dog.speak();
+        // cat.speak();
+        let bindFunction = speakGeneric.bind(dog);
+        bindFunction();
+    </script>
+</body>
+</html>
