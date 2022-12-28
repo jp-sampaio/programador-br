@@ -1,4 +1,4 @@
-//MAP
+//Desafio map sem usar o map
 
 function novosAlunos(nome, idade){
     return{nome, idade}
@@ -13,12 +13,21 @@ let alunos = [
     novosAlunos("Gustavo", 19)
 ];
 
-function daqui5Anos(aluno){
+function daqui5anos(aluno){
     return{
         nome: aluno.nome,
         idade: aluno.idade + 5
     }
 }
 
-console.log(alunos);
-console.log(alunos.map(daqui5Anos))
+function filtro(callback){
+    let filtroDeAlunos = [];
+    for(let aluno of alunos){
+        if(callback(aluno)){
+            filtroDeAlunos.push(aluno);
+        }
+    }
+    return filtroDeAlunos;
+}
+
+console.log(filtro(daqui5anos))
