@@ -7,12 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function handleClick(event){
+function handleClick(event) {
      let square = event.target;
      let position = square.id;
 
-     handleMove(position);
-     updateSquares();
+     if(handleMove(position)) {
+        setTimeout(()=>{
+            alert("O jogo acabou! O ganhador foi o jogador número " + playerTime);
+        }, 10);
+     };
+     updateSquare(position);
+}
+
+function updateSquare(position){
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class = "${symbol}"></div>`;
 }
 
 function updateSquares(){
