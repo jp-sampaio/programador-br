@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio feito por mim</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #133614;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para o formulário */
+        #tarefas {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex-grow: 1;
+        }
+
+        input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        /* Estilos para a lista de tarefas */
+        .lista-tarefas {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .lista-tarefas li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .lista-tarefas li input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio</h1>
+    <p>
+        ​Crie uma lista de tarefas que tenha um input para receber a tarefa, e armazene na memória utilizando o
+        LocalStorage.
+        Dica: Utilize Arrays e Json
+    </p>
+
+    <form id="tarefas">
+        <label for="nova-tarefa">Nova Tarefa:</label>
+        <input type="text" id="nova-tarefa" name="nova-tarefa" placeholder="Digite uma nova tarefa.">
+        <input type="submit" value="adicionar">
+    </form>
+
+    <ul class="lista-tarefas"></ul>
+
+    <script>
+
+        let tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+
+        function adicionarTarefas(tarefa) {
+            tarefas.push(tarefa);
+            localStorage.setItem("tarefas", JSON.stringify(tarefas));
+        }
+
+        function removerTarefa(indice) {
+            tarefas.splice(indice, 1);
+            localStorage.setItem("tarefas", JSON.stringify(tarefas));
+        }
+
+        function mostrarTarefas() {
+            let listaTarefas = document.querySelector(".lista-tarefas");
+            listaTarefas.innerHTML = "";
+            tarefas.forEach((tarefa, indice) => {
+                let lista = document.createElement("li");
+                lista.innerHTML = tarefa;
+                let botaoRemover = document.createElement("button");
+                botaoRemover.innerHTML = "Remover";
+                botaoRemover.addEventListener("click", () => {
+                    removerTarefa(indice);
+                    mostrarTarefas();
+                });
+
+                lista.appendChild(botaoRemover);
+                listaTarefas.appendChild(lista);
+            });
+        }
+
+        let formulario = document.getElementById("tarefas");
+        formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            let dadoEntrada = document.querySelector("#nova-tarefa")
+            adicionarTarefas(dadoEntrada.value);
+            dadoEntrada.value = "";
+            mostrarTarefas();
+        });
+
+        mostrarTarefas();
+
+    </script>
+</body>
+
+</html>
