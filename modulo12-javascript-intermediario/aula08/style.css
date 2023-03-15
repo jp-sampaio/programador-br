@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #faed7c;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.473);
+    margin-top: 30px;
+}
