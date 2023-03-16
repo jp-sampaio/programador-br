@@ -15,10 +15,15 @@
         let pessoas = ["João Paulo", "Maria", "Fernanda", "Joana", "Marcos", "Pedro", "Ótavio", "Luiza", "Taís", "Pablo"];
 
         function sortear(){
+            setTimeout(sorteado, 3000);
+        }
+
+        function sorteado() {
             let participantes = pessoas.length;
             let numeroSorteado = Math.floor(Math.random() * participantes);
             document.getElementById("exibir").innerHTML = pessoas[numeroSorteado];
         }
+        
     </script>
 </body>
 </html>

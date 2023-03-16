@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch</title>
+    <style>
+        body {
+            background-color: darkmagenta;
+            color: rgb(29, 29, 28);
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+
+        label {
+            color: darkblue;
+            text-transform: uppercase;
+        }
+
+        input[type="number"] {
+            background-color: chartreuse;
+            border: none;
+            border-radius: 6px;
+            padding: 8px;
+            font-size: 20px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.425);
+        }
+
+        input[type="button"] {
+            background-color: brown;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        input[type="button"]:hover {
+            opacity: .8;
+        }
+    </style>
 </head>
 <body>
     <h1>Fetch</h1>
     <p>Ele retorna uma api em formato json.</p>
+
+    <div class="botoes-conversao">
+        <label for="valor">Valor</label>
+        <input type="number" name="valor" id="valor" placeholder="Insira um valor...">
+        <input type="button" value="converter" class="converter">
+    </div>
+
+    <div class="resultado"></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

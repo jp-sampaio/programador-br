@@ -29,7 +29,7 @@
 //PROMISES
 let usuarios = ["Joaquim", "Benedita", "Vinicios", "Renata", "Beatriz"];
 
-function inserirUsuarios(nome){
+function inserirUsuarios(nome) {
     let promise = new Promise(function(resolve, reject){
         setTimeout(() => {
             usuarios.push(nome);
@@ -49,14 +49,14 @@ function listarUsuarios(){
     console.log(usuarios);
 }
 
-// inserirUsuarios("Vitor").then(listarUsuarios).catch((erro) => {
-//     console.log(erro.msg)
-// });
+inserirUsuarios("Vitor").then(listarUsuarios).catch((erro) => {
+    console.log(erro.msg)
+});
 
 //Async Await
-async function executar(){
-    await inserirUsuarios("Claudia");
-    listarUsuarios();
-}
+// async function executar(){
+//     await inserirUsuarios("Claudia");
+//     listarUsuarios();
+// }
 
-executar();
+// executar();
